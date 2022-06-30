@@ -19,6 +19,8 @@
 
 ## Instalación
 
+Estas indicaciones estan pensadas para usuarios en ambientes Linux, hare indicaciones particulares para usuarios con XAMPP
+
 - crear virtual host para el proyecto con el nombre que hayan establecido
 - ubicarse el la ruta root de virtual host
 - realizar el clone del proyecto en git
@@ -36,6 +38,16 @@ sudo chown -R $USER:www-data bootstrap/cache
 sudo chmod -R 775 storage
 sudo chmod -R 775 bootstrap/cache
 ```
+
+si ejecutas en un ambiente local de pruebas como XAMPP, los permisos deben ser mas amplios por temas de la herramienta
+```
+sudo chown -R $USER:$USER storage
+sudo chown -R $USER:$USER bootstrap/cache
+sudo chmod -R 777 storage
+sudo chmod -R 777 bootstrap/cache
+```
+
+
 -instalar las depencias de composer
 ```
 composer install
