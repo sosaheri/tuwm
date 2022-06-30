@@ -24,11 +24,11 @@
 - realizar el clone del proyecto en git
 
 ```
-https://github.com/sosaheri/pjv.git
+https://github.com/sosaheri/tuwm.git
 
 ```
 
-- ingresar a la carpeta de proyecto /pjv 
+- ingresar a la carpeta de proyecto /tuwm 
 - otorgar los permisos de escritura correspondientes al proyecto
 ```
 sudo chown -R $USER:www-data storage
@@ -53,6 +53,17 @@ php artisan key:generate
 ```
 php artisan migrate --seed
 ```
+
+## Uso de la aplicación
+
+Para el uso del proyecto se crearon dos usuarios por defecto
+
+usuario             credencial
+
+-cliente@gmail.com  password
+
+-admin@gmail.com    password
+
 
 ## Licencia
 
